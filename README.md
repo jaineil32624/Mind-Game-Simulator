@@ -1,6 +1,10 @@
-# App3 — Puzzle & Brain Training
+# Mind-Game Simulator
 
-App3 is a puzzle and brain-training web app in the style of Lumosity. It is plain HTML, CSS and vanilla JavaScript: no libraries, no build step, no CDN and no network calls. You can open `index.html` directly from disk.
+**▶ [Play now in your browser](https://jaineil32624.github.io/Mind-Game-Simulator/)** · **⬇ [Download ZIP](https://github.com/jaineil32624/Mind-Game-Simulator/archive/refs/heads/main.zip)**
+
+> Download the ZIP, unzip it, and double-click `index.html` to play offline. Nothing to install.
+
+Mind-Game Simulator is a puzzle and brain-training web app in the style of Lumosity. It is plain HTML, CSS and vanilla JavaScript: no libraries, no build step, no CDN and no network calls. You can open `index.html` directly from disk.
 
 ## Features
 
