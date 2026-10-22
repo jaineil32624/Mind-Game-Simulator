@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>App3 · Brain Training</title>
+  <meta name="description" content="App3 — puzzles and brain-training games: Sudoku, Memory Match, Logic Grids, Patterns, Number Sequences and Visual IQ.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236366f1'/%3E%3Cpath d='M32 12l18 20-18 20-18-20z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#/home" aria-label="App3 home">
+      <span class="brand-mark" aria-hidden="true">&#9670;</span><span class="brand-name">App3</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#/home" data-route="home"><span class="nav-ico" aria-hidden="true">&#8962;</span><span>Home</span></a>
+      <a href="#/stats" data-route="stats"><span class="nav-ico" aria-hidden="true">&#128202;</span><span>Stats</span></a>
+      <a href="#/achievements" data-route="achievements"><span class="nav-ico" aria-hidden="true">&#127942;</span><span>Badges</span></a>
+      <a href="#/leaderboard" data-route="leaderboard"><span class="nav-ico" aria-hidden="true">&#129351;</span><span>Ranks</span></a>
+      <a href="#/settings" data-route="settings"><span class="nav-ico" aria-hidden="true">&#9881;</span><span>Settings</span></a>
+    </nav>
+
+    <div class="topbar-right">
+      <a class="level-pill" id="level-pill" href="#/stats" title="Your level">
+        <span class="level-num" id="level-num">Lv 1</span>
+        <span class="mini-bar" aria-hidden="true"><i id="level-bar"></i></span>
+      </a>
+      <button id="btn-sound" class="icon-btn" type="button" aria-label="Mute sound" title="Toggle sound">&#128266;</button>
+      <button id="btn-theme" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle theme">&#127769;</button>
+    </div>
+  </header>
+
+  <main id="app" class="container" tabindex="-1">
+    <noscript><p class="card">App3 needs JavaScript enabled to run.</p></noscript>
+  </main>
+
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+  <div id="modal-root"></div>
+
+  <!--
+    Classic scripts in dependency order (works from file:// — no ES modules).
+    Everything attaches to the single global namespace window.App3.
+  -->
+  <!-- core -->
+  <script src="js/core/namespace.js"></script>
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/rng.js"></script>
+  <script src="js/core/eventbus.js"></script>
+  <script src="js/core/storage.js"></script>
+  <script src="js/core/audio.js"></script>
+  <!-- games: base + registry (systems reference the registry) -->
+  <script src="js/games/base-game.js"></script>
+  <script src="js/games/registry.js"></script>
+  <!-- systems -->
+  <script src="js/systems/xp.js"></script>
+  <script src="js/systems/stats.js"></script>
+  <script src="js/systems/achievements.js"></script>
+  <script src="js/systems/daily.js"></script>
+  <script src="js/systems/leaderboard.js"></script>
+  <script src="js/systems/hints.js"></script>
+  <!-- shared game helpers -->
+  <script src="js/games/shared/figures.js"></script>
+  <script src="js/games/shared/quiz-game.js"></script>
+  <!-- game modes (each self-registers) -->
+  <script src="js/games/sudoku.js"></script>
+  <script src="js/games/memory.js"></script>
+  <script src="js/games/logic-grid.js"></script>
+  <script src="js/games/pattern.js"></script>
+  <script src="js/games/sequence.js"></script>
+  <script src="js/games/visual-iq.js"></script>
+  <!-- ui -->
+  <script src="js/ui/toasts.js"></script>
+  <script src="js/ui/components.js"></script>
+  <script src="js/ui/charts.js"></script>
+  <script src="js/ui/router.js"></script>
+  <script src="js/ui/screens/home.js"></script>
+  <script src="js/ui/screens/game.js"></script>
+  <script src="js/ui/screens/stats.js"></script>
+  <script src="js/ui/screens/achievements.js"></script>
+  <script src="js/ui/screens/leaderboard.js"></script>
+  <script src="js/ui/screens/settings.js"></script>
+  <!-- boot -->
+  <script src="js/main.js"></script>
+</body>
+</html>

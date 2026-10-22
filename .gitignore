@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs & temp
+*.log
+npm-debug.log*
+tmp/
+.cache/
+
+# Dependencies / builds (none required, but keep them out if added later)
+node_modules/
+dist/
+coverage/
+
+# Exported save files
+app3-save-*.json
