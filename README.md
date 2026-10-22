@@ -1,14 +1,98 @@
-# Mind-Game Simulator
+<div align="center">
 
-| ▶ Play online | ⬇ Download (offline) | 🌐 Website |
+<a href="https://jaineil32624.github.io/Mind-Game-Simulator/"><img src="docs/banner.png" alt="Mind-Game Simulator — Train your brain. 6 puzzle games, unlimited levels, daily challenges." width="100%"></a>
+
+<br>
+
+[![▶ PLAY NOW](https://img.shields.io/badge/🧠_PLAY_NOW-in_your_browser-7c3aed?style=for-the-badge)](https://jaineil32624.github.io/Mind-Game-Simulator/)
+[![⬇ DOWNLOAD ZIP](https://img.shields.io/badge/⬇_DOWNLOAD-ZIP_·_play_offline-ec4899?style=for-the-badge)](https://github.com/jaineil32624/Mind-Game-Simulator/releases/latest/download/Mind-Game-Simulator.zip)
+[![🌐 WEBSITE](https://img.shields.io/badge/🌐_WEBSITE-github.io-0ea5e9?style=for-the-badge)](https://jaineil32624.github.io/Mind-Game-Simulator/)
+
+![No install](https://img.shields.io/badge/no_install-just_open_it-22c55e?style=flat-square)
+![Works offline](https://img.shields.io/badge/works-offline-14b8a6?style=flat-square)
+![Mobile ready](https://img.shields.io/badge/mobile-ready-f59e0b?style=flat-square)
+![Zero dependencies](https://img.shields.io/badge/dependencies-0-6366f1?style=flat-square)
+[![MIT License](https://img.shields.io/badge/license-MIT-a855f7?style=flat-square)](LICENSE)
+
+### 🧠 Six brain games. Infinite puzzles. One daily challenge for the whole world. ⚡
+
+</div>
+
+## 📸 Take a look
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/home-dark.png" alt="Home dashboard with level, XP bar and daily challenge"><br><sub>🏠 <b>Your dashboard</b> — level, XP, streak and today's challenge</sub></td>
+    <td width="50%"><img src="docs/screenshots/sudoku-light.png" alt="Sudoku mid-game with pencil notes and highlighting"><br><sub>🔢 <b>Sudoku</b> — pencil notes, smart highlighting, always one solution</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/logic-dark.png" alt="Logic grid puzzle in progress"><br><sub>🧩 <b>Logic Grid</b> — Einstein-style deduction with ✓ / ✗ marking</sub></td>
+    <td width="50%"><img src="docs/screenshots/visual-light.png" alt="Visual IQ matrix question"><br><sub>🧠 <b>Visual IQ</b> — Raven-style matrices, rotations and mirrors</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/stats-toast-dark.png" alt="Statistics charts with an achievement unlock toast"><br><sub>🏆 <b>Stats & badges</b> — charts, personal bests and unlock moments</sub></td>
+    <td width="50%" align="center">
+      <img src="docs/screenshots/phone-home-light.png" alt="Phone home screen" width="45%">&nbsp;
+      <img src="docs/screenshots/phone-memory-dark.png" alt="Phone Memory Match game" width="45%"><br><sub>📱 <b>Plays great on phones</b> — light & dark themes</sub>
+    </td>
+  </tr>
+</table>
+
+## 🎮 6 games, 4 difficulties each
+
+| | Game | What makes it fun |
 |---|---|---|
-| **[Play now in your browser](https://jaineil32624.github.io/Mind-Game-Simulator/)** | **[Mind-Game-Simulator.zip](https://github.com/jaineil32624/Mind-Game-Simulator/releases/latest/download/Mind-Game-Simulator.zip)** · [all releases](https://github.com/jaineil32624/Mind-Game-Simulator/releases) | [jaineil32624.github.io/Mind-Game-Simulator](https://jaineil32624.github.io/Mind-Game-Simulator/) |
+| 🔢 | **Sudoku** | Fresh puzzles every time, each with exactly one solution. Pencil notes and hints that teach real techniques. |
+| 🃏 | **Memory Match** | Flip, remember, match. Grids grow up to 6×6 with sneaky look-alike cards. |
+| 🧩 | **Logic Grid** | Be the detective: crack Einstein-style clue puzzles, each proven to have one answer. |
+| 🔷 | **Pattern Recognition** | Spot the odd one out and predict what comes next. |
+| 📈 | **Number Sequences** | Fibonacci, primes, squares and nastier rules. Can you find the next number? |
+| 🧠 | **Visual IQ** | Matrix puzzles, mental rotation and mirror-image challenges. |
 
-> **Play offline:** download the ZIP, unzip it, and double-click `index.html`. Nothing to install, works in any modern browser (Chrome, Edge, Firefox, Safari), on desktop and mobile.
->
-> **On a phone or tablet:** open the Play link, then use your browser's *Add to Home Screen*.
+Every game goes from **Easy** to **Expert**, and the puzzle generator really does get harder: bigger grids, fewer clues, subtler rules. Puzzles are generated on the fly, so you'll never run out.
 
-Mind-Game Simulator is a puzzle and brain-training web app in the style of Lumosity. It is plain HTML, CSS and vanilla JavaScript: no libraries, no build step, no CDN and no network calls. You can open `index.html` directly from disk.
+## 🏆 Level up
+
+- ⭐ **XP & levels.** Earn XP for every solve, with bonuses for accuracy and speed. There's no level cap.
+- 🏅 **22 achievement badges.** Each unlock gets its own animated pop-up and jingle.
+- 📅 **Daily challenge.** Three fresh puzzles a day, the same for every player in the world, worth **2× XP**.
+- 🔥 **Streaks.** Finish the daily challenge every day and watch your streak grow.
+- 💡 **Hints that teach.** A limited number per puzzle, paid for with XP, so use them wisely.
+- 📊 **Stats.** Personal bests, win rates, accuracy trends and charts for every game.
+- 🎵 **Music & sounds.** Calm generated background music and satisfying sound effects. Mute or adjust anytime.
+- 🌗 **Light & dark themes**, keyboard shortcuts, and progress that saves itself (export/import included).
+
+## 🚀 Play in 10 seconds
+
+**Option 1 — Play online (fastest)**
+👉 Open **[jaineil32624.github.io/Mind-Game-Simulator](https://jaineil32624.github.io/Mind-Game-Simulator/)** and start playing.
+
+**Option 2 — Download & play offline**
+1. ⬇ Download **[Mind-Game-Simulator.zip](https://github.com/jaineil32624/Mind-Game-Simulator/releases/latest/download/Mind-Game-Simulator.zip)**
+2. 📂 Unzip it
+3. 🖱️ Double-click `index.html`. That's it: no install and no internet needed. Works in Chrome, Edge, Firefox and Safari.
+
+**Option 3 — On your phone**
+📱 Open the [play link](https://jaineil32624.github.io/Mind-Game-Simulator/) on your phone, then tap **Share → Add to Home Screen** (iPhone) or **⋮ → Add to Home screen** (Android) to get it as an app icon.
+
+<div align="center">
+
+### Like it? ⭐ Star the repo!
+
+[![▶ PLAY NOW](https://img.shields.io/badge/🧠_PLAY_NOW-in_your_browser-7c3aed?style=for-the-badge)](https://jaineil32624.github.io/Mind-Game-Simulator/)
+[![⬇ DOWNLOAD ZIP](https://img.shields.io/badge/⬇_DOWNLOAD-ZIP_·_play_offline-ec4899?style=for-the-badge)](https://github.com/jaineil32624/Mind-Game-Simulator/releases/latest/download/Mind-Game-Simulator.zip)
+[![⭐ STAR](https://img.shields.io/github/stars/jaineil32624/Mind-Game-Simulator?style=for-the-badge&logo=github&label=⭐%20Star&color=f59e0b)](https://github.com/jaineil32624/Mind-Game-Simulator)
+
+</div>
+
+---
+
+<details>
+<summary><b>🛠️ For developers: architecture, generators, adding a game mode</b></summary>
+
+<br>
+
+Mind-Game Simulator is plain HTML, CSS and vanilla JavaScript: no libraries, no build step, no CDN and no network calls, so `index.html` runs directly from disk. Internally all code lives on one global namespace, `window.App3`.
 
 ## Features
 
@@ -69,6 +153,7 @@ js/
     eventbus.js       pub/sub that decouples systems from the UI
     storage.js        versioned save, migrations, export/import/reset
     audio.js          Web Audio synthesized sound effects
+    music.js          procedural background music (toggle + volume)
   games/
     base-game.js      BaseGame contract (generate/render/getHint/onKey/complete)
     registry.js       game registry; registering a mode is all you need to do
@@ -168,5 +253,7 @@ The save lives under the `localStorage` key `app3.save` and always carries a `ve
 - Sudoku difficulty is set by clue count, not by which solving techniques are required. Expert puzzles stop at ≈23–26 clues, wherever no further clue can be removed without losing uniqueness.
 - Sound needs one user interaction before it can play, because of browser autoplay rules.
 
-## License
+</details>
+
+## 📜 License
 MIT — see [LICENSE](LICENSE). © 2026 Jaineil Rana.

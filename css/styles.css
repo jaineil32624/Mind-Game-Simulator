@@ -554,6 +554,9 @@ tbody tr:first-child .lg-cell, tr.gend + tr .lg-cell { border-top: 2px solid var
   .sd-pad { grid-template-columns: repeat(3, 1fr); }
   .sd-num { padding: 14px 0 6px; font-size: 1.5rem; }
   .lg-wrap { grid-template-columns: auto 340px; justify-content: center; }
+  .quiz-options.figs.n5 { grid-template-columns: repeat(5, 1fr); }
+  .quiz-options.figs.n6 { grid-template-columns: repeat(6, 1fr); }
+  .quiz-options.figs.n5 .quiz-opt, .quiz-options.figs.n6 .quiz-opt { min-height: 0; padding: 18px 8px 8px; }
 }
 
 /* Mobile: nav becomes a bottom tab bar. */
