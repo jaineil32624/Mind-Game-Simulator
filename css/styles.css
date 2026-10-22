@@ -580,3 +580,6 @@ tbody tr:first-child .lg-cell, tr.gend + tr .lg-cell { border-top: 2px solid var
   .mem-grid { gap: 6px; }
   .sd-pad { gap: 4px; }
 }
+
+/* Music volume slider (settings) */
+#set-music-vol { width: 160px; max-width: 100%; accent-color: var(--accent, #6c5ce7); }

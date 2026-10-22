@@ -72,12 +72,12 @@
     });
 
     // Browsers require a gesture before audio can play.
-    var unlock = function () { App3.core.audio.unlock(); window.removeEventListener('pointerdown', unlock); window.removeEventListener('keydown', unlock); };
+    var unlock = function () { App3.core.audio.unlock(); App3.core.music.start(); window.removeEventListener('pointerdown', unlock); window.removeEventListener('keydown', unlock); };
     window.addEventListener('pointerdown', unlock);
     window.addEventListener('keydown', unlock);
 
     events.on('xp:changed', updateLevelPill);
-    events.on('settings:changed', applySoundButton);
+    events.on('settings:changed', function () { applySoundButton(); App3.core.music.sync(); });
     events.on('level:up', function (e) {
       App3.core.audio.play('levelup');
       var pill = document.getElementById('level-pill');
@@ -88,6 +88,7 @@
     });
     events.on('achievement:unlocked', function (e) { toasts.achievement(e.achievement); });
     events.on('storage:replaced', function () {
+      App3.core.music.sync();
       applyTheme();
       applySoundButton();
       updateLevelPill();

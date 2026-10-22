@@ -39,6 +39,15 @@
       sound.checked = !st.settings.muted;
       sound.addEventListener('change', function () { App3.core.audio.setMuted(!sound.checked); if (sound.checked) App3.core.audio.play('correct'); });
 
+      var music = el('input', { type: 'checkbox', id: 'set-music' });
+      music.checked = App3.core.music.isEnabled();
+      music.addEventListener('change', function () { App3.core.music.setEnabled(music.checked); });
+
+      var musicVol = el('input', { type: 'range', id: 'set-music-vol', min: '0', max: '100', step: '5', 'aria-label': 'Music volume' });
+      musicVol.value = String(Math.round(App3.core.music.volume() * 100));
+      // 'input' re-levels live while dragging; persisting on every step is cheap (small save).
+      musicVol.addEventListener('input', function () { App3.core.music.setVolume(Number(musicVol.value) / 100); });
+
       var auto = el('input', { type: 'checkbox', id: 'set-auto' });
       auto.checked = st.settings.autoCross !== false;
       auto.addEventListener('change', function () { st.settings.autoCross = auto.checked; storage.save(); });
@@ -95,6 +104,8 @@
         el('h2', null, 'Preferences'),
         row('Theme', themeSel),
         row(el('label', { for: 'set-sound' }, 'Sound effects'), el('label', { class: 'switch' }, [sound, el('span', { class: 'slider' })]), 'Synthesized with the Web Audio API.'),
+        row(el('label', { for: 'set-music' }, 'Background music'), el('label', { class: 'switch' }, [music, el('span', { class: 'slider' })]), 'Calm generated music. The header mute button silences it too.'),
+        row(el('label', { for: 'set-music-vol' }, 'Music volume'), musicVol),
         row(el('label', { for: 'set-auto' }, 'Logic Grid auto-✗'), el('label', { class: 'switch' }, [auto, el('span', { class: 'slider' })]), 'Automatically cross out the row and column after placing a ✓.')
       ]));
       root.appendChild(el('section', { class: 'card settings' }, [

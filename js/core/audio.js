@@ -89,6 +89,9 @@
       if (c && c.state === 'suspended') { try { c.resume(); } catch (e) { /* ignore */ } }
     },
 
+    /** Shared AudioContext (created lazily), or null if unsupported. Used by core/music. */
+    context: ensureContext,
+
     isMuted: isMuted,
 
     setMuted: function (muted) {

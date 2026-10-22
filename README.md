@@ -1,8 +1,12 @@
 # Mind-Game Simulator
 
-**▶ [Play now in your browser](https://jaineil32624.github.io/Mind-Game-Simulator/)** · **⬇ [Download ZIP](https://github.com/jaineil32624/Mind-Game-Simulator/archive/refs/heads/main.zip)**
+| ▶ Play online | ⬇ Download (offline) | 🌐 Website |
+|---|---|---|
+| **[Play now in your browser](https://jaineil32624.github.io/Mind-Game-Simulator/)** | **[Mind-Game-Simulator.zip](https://github.com/jaineil32624/Mind-Game-Simulator/releases/latest/download/Mind-Game-Simulator.zip)** · [all releases](https://github.com/jaineil32624/Mind-Game-Simulator/releases) | [jaineil32624.github.io/Mind-Game-Simulator](https://jaineil32624.github.io/Mind-Game-Simulator/) |
 
-> Download the ZIP, unzip it, and double-click `index.html` to play offline. Nothing to install.
+> **Play offline:** download the ZIP, unzip it, and double-click `index.html`. Nothing to install, works in any modern browser (Chrome, Edge, Firefox, Safari), on desktop and mobile.
+>
+> **On a phone or tablet:** open the Play link, then use your browser's *Add to Home Screen*.
 
 Mind-Game Simulator is a puzzle and brain-training web app in the style of Lumosity. It is plain HTML, CSS and vanilla JavaScript: no libraries, no build step, no CDN and no network calls. You can open `index.html` directly from disk.
 
@@ -28,7 +32,7 @@ Every mode has four difficulties (**Easy, Medium, Hard, Expert**), and each diff
 - **Statistics per mode.** Played, won, win rate, best time (overall and per difficulty), average time, accuracy and hints. Includes an SVG bar chart (played vs won) and an accuracy trend line.
 - **Saving.** Progress goes to `localStorage` using a **versioned schema with migrations** (v1 → v2 → v3). You can export and import the save as JSON or reset it. If storage is blocked, the app falls back to memory.
 - **Leaderboard framework.** There is a `LeaderboardProvider` interface, a working `LocalLeaderboardProvider`, and a stub `RemoteLeaderboardProvider` that marks where an HTTP backend plugs in.
-- **Interface.** Light and dark themes (following the system by default), responsive layout with a bottom tab bar on phones, smooth transitions, keyboard support, Web Audio sound effects (no audio files) with a mute toggle, and `prefers-reduced-motion` support.
+- **Interface.** Light and dark themes (following the system by default), responsive layout with a bottom tab bar on phones, smooth transitions, keyboard support, Web Audio sound effects (no audio files) with a mute toggle, and `prefers-reduced-motion` support. Calm procedurally generated background music (toggle + volume in Settings; the header mute button silences everything).
 
 ### Puzzle generation guarantees
 - All randomness goes through a seeded RNG (`App3.core.RNG`, mulberry32 with string hashing). Puzzles are reproducible from their seed, so daily challenges are identical for everyone.
